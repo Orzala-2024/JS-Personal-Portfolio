@@ -196,3 +196,20 @@ document.addEventListener("DOMContentLoaded", function() {
     imageContainer.appendChild(img);
   });
 });
+
+// Text changing
+function changeText() {
+  const colorSpan = document.getElementById('color');
+  let currentText = 'Web Developer';
+
+  setInterval(() => {
+    colorSpan.style.opacity = 0;
+
+    setTimeout(() => {
+      currentText = currentText === 'Web Developer' ? 'Freelancer' : 'Web Developer';
+      colorSpan.innerText = currentText;
+      colorSpan.style.opacity = 1;
+    }, 1000); // Match this with the CSS transition duration for opacity
+  }, 5000); // Interval for text change
+}
+
