@@ -74,40 +74,40 @@ document.addEventListener('DOMContentLoaded', function() {
     {
       title: 'Survey Form',
       description: '',
-      image: 'new.jpeg',
+      image: 'black-plaindrome.png',
       technologies: ['HTML', 'CSS', 'JavaScript'],
       link: 'https://example.com/project4'
     },
     {
       title: 'Roman Numeral',
       description: '',
-      image: 'profile.png',
+      image: 'pokeman2.png',
       technologies: ['HTML', 'CSS', 'JavaScript'],
       link: 'https://example.com/project4'
     },
     {
       title: 'Personal Portfolio',
       description: '',
-      image: 'new.jpeg',
+      image: 'roman-converter.png',
       technologies: ['HTML', 'CSS', 'JavaScript'],
       link: 'https://example.com/project4'
     },
     {
       title: 'Palindrome Checker',
       description: '',
-      image: 'profile.png',
+      image: 'pro-1.png',
       technologies: ['HTML', 'CSS', 'JavaScript'],
       link: 'https://example.com/project4'
     },
     {
       title: 'PPP Project',
       description: '',
-      image: 'new.jpeg',
+      image: 'roman-converter.png',
       technologies: ['HTML', 'CSS', 'JavaScript'],
       link: 'https://example.com/project4'
     },
     {
-      title: 'Product Landing Page',
+      title: 'roman-converter.png',
       description: '',
       image: 'profile.png',
       technologies: ['HTML', 'CSS', 'JavaScript'],
