@@ -155,3 +155,44 @@ document.addEventListener('DOMContentLoaded', function() {
   showSlide(currentIndex);
 });
 
+// Three more images
+document.addEventListener("DOMContentLoaded", function() {
+  const images = [
+    'new.jpeg',
+    'new.jpeg',
+    'new.jpeg'
+  ];
+
+  const imageContainer = document.getElementById('image-container');
+
+  images.forEach(imageSrc => {
+    const img = document.createElement('img');
+    img.src = imageSrc;
+    img.alt = 'Dynamic Image';
+    img.style.width = '350px'; // Optional: Set image width
+    img.style.height = 'auto'; // Optional: Maintain aspect ratio
+
+    // Create hover content container
+    const hoverContent = document.createElement('div');
+    hoverContent.classList.add('hover-content');
+
+    const hoverTitle = document.createElement('h1');
+    hoverTitle.innerText = 'Hovered Title';
+    hoverContent.appendChild(hoverTitle);
+
+    const hoverList = document.createElement('ul');
+    ['Item 1', 'Item 2', 'Item 3'].forEach(text => {
+      const li = document.createElement('li');
+      li.innerText = text;
+      hoverList.appendChild(li);
+    });
+    hoverContent.appendChild(hoverList);
+
+    const hoverButton = document.createElement('button');
+    hoverButton.innerText = 'Click Me';
+    hoverContent.appendChild(hoverButton);
+
+    img.appendChild(hoverContent);
+    imageContainer.appendChild(img);
+  });
+});
