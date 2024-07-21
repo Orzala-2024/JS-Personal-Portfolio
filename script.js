@@ -213,3 +213,19 @@ function changeText() {
   }, 5000); // Interval for text change
 }
 
+//circles
+document.addEventListener('DOMContentLoaded', function() {
+  const circles = document.querySelectorAll('.circle');
+  
+  circles.forEach(circle => {
+      const percent = circle.getAttribute('data-percent');
+      const rotateValue = (percent / 100) * 360;
+      
+      if (percent <= 50) {
+          circle.querySelector('::before').style.transform = `rotate(${rotateValue}deg)`;
+      } else {
+          circle.querySelector('::before').style.transform = `rotate(180deg)`;
+          circle.querySelector('::after').style.transform = `rotate(${rotateValue - 180}deg)`;
+      }
+  });
+});
