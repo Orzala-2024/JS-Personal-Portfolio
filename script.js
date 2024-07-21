@@ -25,17 +25,16 @@ const certificatesData = [
     title: 'JavaScript',
     image: 'freecodcamp-certificate.png'
   }
-  // Add more certificate objects as needed
 ];
 
 const certificateContent = document.getElementById('certificate-content');
 
 function loadCertificates() {
-  certificateContent.innerHTML = ''; // Clear existing content
+  certificateContent.innerHTML = ''; 
 
-  // Add Certification title dynamically
+  // title
   const certificationTitle = document.createElement('h2');
-  certificationTitle.innerText = 'Certification';
+  certificationTitle.innerText = 'Certification of Complition';
   certificateContent.insertAdjacentElement('beforebegin', certificationTitle);
 
   certificatesData.forEach(cert => {
@@ -57,11 +56,10 @@ function loadCertificates() {
   });
 }
 
-// Load certificates when the page is loaded
 loadCertificates();
 
 document.addEventListener('DOMContentLoaded', function() {
-  // Add title above the carousel
+
   const carouselContainer = document.getElementById('carousel-container');
   const skillHead = document.createElement('h1');
   skillHead.id = 'skill-head';
