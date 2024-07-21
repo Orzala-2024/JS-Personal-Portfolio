@@ -68,3 +68,90 @@ document.addEventListener('DOMContentLoaded', function() {
 
   // Display the certificate section by default
   document.getElementById('certificate-content').style.display = 'block';
+
+  // Carousel data
+  const carouselData = [
+    {
+      title: 'Survey Form',
+      description: '',
+      image: 'new.jpeg',
+      technologies: ['HTML', 'CSS', 'JavaScript'],
+      link: 'https://example.com/project4'
+    },
+    {
+      title: 'Roman Numeral',
+      description: '',
+      image: 'profile.png',
+      technologies: ['HTML', 'CSS', 'JavaScript'],
+      link: 'https://example.com/project4'
+    },
+    {
+      title: 'Personal Portfolio',
+      description: '',
+      image: 'new.jpeg',
+      technologies: ['HTML', 'CSS', 'JavaScript'],
+      link: 'https://example.com/project4'
+    },
+    {
+      title: 'Palindrome Checker',
+      description: '',
+      image: 'profile.png',
+      technologies: ['HTML', 'CSS', 'JavaScript'],
+      link: 'https://example.com/project4'
+    },
+    {
+      title: 'PPP Project',
+      description: '',
+      image: 'new.jpeg',
+      technologies: ['HTML', 'CSS', 'JavaScript'],
+      link: 'https://example.com/project4'
+    },
+    {
+      title: 'Product Landing Page',
+      description: '',
+      image: 'profile.png',
+      technologies: ['HTML', 'CSS', 'JavaScript'],
+      link: 'https://example.com/project4'
+    }
+  ];
+
+  const carouselImage = document.getElementById('carousel-image');
+  const carouselTitle = document.getElementById('carousel-title');
+  const carouselDescription = document.getElementById('carousel-description');
+  const carouselTech = document.getElementById('carousel-tech');
+
+  let currentIndex = 0;
+
+  function showSlide(index) {
+    const totalSlides = carouselData.length;
+    if (index >= totalSlides) currentIndex = 0;
+    if (index < 0) currentIndex = totalSlides - 1;
+    const item = carouselData[currentIndex];
+    carouselImage.src = item.image;
+    carouselImage.alt = item.title;
+    carouselTitle.innerText = item.title;
+    carouselDescription.innerText = item.description;
+
+    // Clear previous technologies
+    carouselTech.innerHTML = '';
+    item.technologies.forEach(tech => {
+      const li = document.createElement('li');
+      li.innerText = tech;
+      carouselTech.appendChild(li);
+    });
+  }
+
+  window.nextSlide = function() {
+    currentIndex++;
+    showSlide(currentIndex);
+  }
+
+  window.prevSlide = function() {
+    currentIndex--;
+    showSlide(currentIndex);
+  }
+
+  // Initial display
+  showSlide(currentIndex);
+});
+
