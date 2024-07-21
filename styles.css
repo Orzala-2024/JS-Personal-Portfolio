@@ -339,3 +339,7 @@ p {
 .social-media a:hover {
 box-shadow: 0 0 10px 5px rgba(70, 233, 255, 0.5);
 }
+
+colgroup {
+  color: #040E46;
+}
