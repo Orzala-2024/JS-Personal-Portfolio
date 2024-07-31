@@ -35,9 +35,9 @@
       </div>
     </nav>
   </header>
-  <div class="main-content">
+  <div class="container">
     <div id="profile">
-      <img src="profile.png" alt="Profile Image">
+    <img src="profile.png" alt="Profile Image" id="side-image">
     </div>
     <div class="container-text">
       <h4>Hello, it's ME</h4>
@@ -52,6 +52,7 @@
       </div>
       <button>Download CV</button>
     </div>
+    
     <section id="about">
       <div class="about-page active">
         <h1>About <span id="color">Me</span></h1>
@@ -132,21 +133,17 @@
         </div>
       </div>
       <div id="carousel-container">
-        <div class="carousel">
-          <button class="carousel-nav prev" onclick="prevSlide()">&#10094;</button>
-          <div class="carousel-image-container">
-            <img id="carousel-image" src="" alt="">
-            <div class="carousel-content">
-              <h1 id="carousel-title"></h1>
-              <p id="carousel-description"></p>
-              <ul id="carousel-tech"></ul>
-              <a id="carousel-link" href="#" target="_blank">Live Link</a>
-              <a id="carousel-link" href="#" target="_blank">Source Link</a>
-            </div>
-          </div>
-          <button class="carousel-nav next" onclick="nextSlide()">&#10095;</button>
+        <button class="carousel-arrow left-arrow" onclick="prevSlide()">&#9664;</button>
+        <img id="carousel-image" src="" alt="">
+        <div id="carousel-content">
+            <h2 id="carousel-title"></h2>
+            <p id="carousel-description"></p>
+            <ul id="carousel-tech"></ul>
+            <button class="learn-more-button">Learn More</button>
         </div>
-      </div>
+        <button class="carousel-arrow right-arrow" onclick="nextSlide()">&#9654;</button>
+    </div>
+    <div id="popup-container"></div>
       <div id="image-container" class="new-img"></div>
       <div id="contact-div">
         <h3>Get In Touch</h3>
@@ -171,7 +168,6 @@
         <a href="https://wa.me/93766766313" target="_blank" rel="noopener"><i class="fa-brands fa-facebook"></i></a>
       </div>
     </div>
-    <button id="up" class="fixed-button"><i class="fa-solid fa-hand-pointer"></i></button>
   </div>
   <script src="script.js"></script>
 </body>

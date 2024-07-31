@@ -5,7 +5,7 @@
   color: #fff;
 }
 
-html {
+body {
   font-family: 'poppins', sans-serif;
   color: white;
   background-color: #052B3C;
@@ -21,10 +21,8 @@ a {
 }
 
 .header {
-  background-color: #040E46;
-  height: 10%;
-  position: fixed;
-  width: 100%;
+  background-color: #46E9FF
+  posi;
 }
 
 img#logo {
@@ -125,10 +123,244 @@ img#logo {
 
 
 
+/*carousel*/
+/* #carousel-container {
+  position: relative;
+  width: 100%;
+  overflow: hidden;
+  text-align: center;
+  margin-top: 50px;
+}
+
+.carousel {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: relative;
+  width: 95%;
+  max-width: 800px; /* Adjust as needed */
+  /* margin: auto;
+  height: 300px;
+  border-radius: 20px;
+}
+
+.carousel-image-container {
+  position: relative;
+  display: inline-block;
+  width: 100%;
+  height: 100%;
+  overflow: hidden;
+  border-radius: 20px;
+}
+
+#carousel-image {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  cursor: pointer;
+  transition: transform 0.5s ease;
+}
+
+#carousel-image:hover {
+  transform: scale(1.1);
+}
+
+.carousel-content {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  background-image: linear-gradient(to bottom ,rgba(49, 219, 242, 2), transparent);
+  color: white;
+  padding: 20px;
+  text-align: center;
+  transform: translateY(100%);
+  transition: transform 0.5s ease, opacity 0.5s ease;
+  opacity: 0;
+  border-radius: 20px 20px 0px 0px;
+
+}
+
+.carousel-content h1, .carousel-content p, .carousel-content ul {
+  margin: 10px 0;
+  margin-bottom: 10px;
+}
+
+.carousel-content ul {
+  list-style: none;
+  padding: 0;
+}
+
+.carousel-content ul li {
+  display: inline-block;
+  margin: 5px 5px;
+  margin-bottom: 0;
+  padding: 5px 10px;
+  background:#052B3C;
+  border-radius: 5px;
+  color: #ffffff;
+  font-size: 12px;
+}
+
+.carousel-content a {
+  display: inline-block;
+  margin-top: 5px;
+  padding: 10px 20px;
+  background-color: #46E9FF;
+  color: #ffffff;
+  text-decoration: none;
+  border-radius: 5px;
+  transition: background-color 0.3s, color 0.3s;
+  font-size: 14px;
+  width: 120px;
+  margin-right: 5px;
+}
+
+.carousel-image-container:hover .carousel-content {
+  transform: translateY(0);
+  opacity: 1;
+}
+
+.carousel-nav {
+  background-color: rgba(0, 0, 0, 0.5);
+  border: none;
+  color: white;
+  padding: 10px;
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  cursor: pointer;
+}
+
+.carousel-nav.prev {
+  left: 10px;
+}
+
+.carousel-nav.next {
+  right: 10px;
+  color:#46E9FF;
+} */ 
 
 
 
 
+/*new-carousel and Popup container */
+.popup-menu {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.5);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  z-index: 1000;
+}
+
+/* Popup content */
+.popup-content {
+  background: #fff;
+  padding: 20px;
+  border-radius: 8px;
+  width: 80%;
+  max-width: 600px;
+  position: relative;
+}
+
+.popup-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.popup-close {
+  cursor: pointer;
+  font-size: 20px;
+  font-weight: bold;
+}
+
+.popup-body img {
+  max-width: 100%;
+  height: auto;
+}
+
+.popup-body ul {
+  list-style: none;
+  padding: 0;
+}
+
+.popup-body li {
+  margin: 5px 0;
+}
+
+.popup-close-btn {
+  display: inline-block;
+  margin-top: 10px;
+  padding: 10px 20px;
+  background: #007BFF;
+  color: #fff;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+/* Carousel container */
+#carousel-container {
+  position: relative;
+  width: 80%;
+  margin: auto;
+  overflow: hidden;
+  text-align: center;
+}
+
+#carousel-image {
+  width: 100%;
+  border-radius: 10px;
+}
+
+/* Carousel content */
+#carousel-content {
+  position: absolute;
+  display: none;
+  text-align: center;
+  background: rgba(0, 0, 0, 0.5);
+  color: white;
+  padding: 10px;
+  border-radius: 10px;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+#carousel-container:hover #carousel-content {
+  display: block;
+}
+
+.learn-more-button {
+  margin-top: 10px;
+}
+
+/* Carousel arrows */
+.carousel-arrow {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  background: rgba(0, 0, 0, 0.5);
+  color: white;
+  border: none;
+  font-size: 30px;
+  padding: 10px;
+  cursor: pointer;
+}
+
+.left-arrow {
+  left: 0;
+}
+
+.right-arrow {
+  right: 0;
+}
 
 
 
@@ -339,3 +571,49 @@ p {
 .social-media a:hover {
 box-shadow: 0 0 10px 5px rgba(70, 233, 255, 0.5);
 }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
