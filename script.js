@@ -27,7 +27,7 @@ document.addEventListener('DOMContentLoaded', () => {
       {
           title: 'JavaScript',
           image: 'assets/freecodcamp-certificate.png',
-      }
+      },
   ];
 
   const certificateContent = document.getElementById('certificate-content');
@@ -60,156 +60,156 @@ document.addEventListener('DOMContentLoaded', () => {
   }
 
   loadCertificates();
-//carousel
-const carouselContainer = document.getElementById('carousel-container');
-const skillHead = document.createElement('h1');
-skillHead.id = 'skill-head';
-skillHead.innerHTML = 'Our <span id="color">Projects</span>';
-carouselContainer.insertAdjacentElement('beforebegin', skillHead);
 
-const projectDesc = document.createElement('p');
-projectDesc.innerText = 'Click on the project image to see more details.';
-skillHead.insertAdjacentElement('afterend', projectDesc);
+  // Carousel
+  const carouselContainer = document.getElementById('carousel-container');
+  const skillHead = document.createElement('h1');
+  skillHead.id = 'skill-head';
+  skillHead.innerHTML = 'Our <span id="color">Projects</span>';
+  carouselContainer.insertAdjacentElement('beforebegin', skillHead);
 
-const carouselData = [
-    {
-        title: 'Survey Form',
-        image: 'assets/freecodcamp-certificate.png',
-        description: 'A form built to collect survey responses.',
-        technologies: ['HTML', 'CSS', 'JavaScript'],
-        sourceLink: 'https://github.com/example/survey-form',
-        liveLink: 'https://example.com/project4',
-    },
-    {
-        title: 'Personal Portfolio',
-        image: 'portfolio.jpeg',
-        description: 'A personal portfolio showcasing my projects.',
-        technologies: ['HTML', 'CSS', 'JavaScript'],
-        sourceLink: 'https://github.com/example/personal-portfolio',
-        liveLink: 'https://example.com/project5',
-    },
-    {
-        title: 'E-commerce Site',
-        image: 'ecommerce.jpeg',
-        description: 'An e-commerce site with various products.',
-        technologies: ['HTML', 'CSS', 'JavaScript'],
-        sourceLink: 'https://github.com/example/e-commerce-site',
-        liveLink: 'https://example.com/project6',
-    },
-    {
-        title: 'Blog Site',
-        image: 'blog.jpeg',
-        description: 'A blog site to share articles and posts.',
-        technologies: ['HTML', 'CSS', 'JavaScript'],
-        sourceLink: 'https://github.com/example/blog-site',
-        liveLink: 'https://example.com/project7',
-    },
-    {
-        title: 'Social Media App',
-        image: 'socialmedia.jpeg',
-        description: 'A social media app to connect with friends.',
-        technologies: ['HTML', 'CSS', 'JavaScript'],
-        sourceLink: 'https://github.com/example/social-media-app',
-        liveLink: 'https://example.com/project8',
-    },
-    {
-        title: 'To-do List App',
-        image: 'todolist.jpeg',
-        description: 'A to-do list app to manage tasks.',
-        technologies: ['HTML', 'CSS', 'JavaScript'],
-        sourceLink: 'https://github.com/example/to-do-list-app',
-        liveLink: 'https://example.com/project9',
-    }
-];
+  const projectDesc = document.createElement('p');
+  projectDesc.innerText = 'Click on the project image to see more details.';
+  skillHead.insertAdjacentElement('afterend', projectDesc);
 
-const carouselImage = document.getElementById('carousel-image');
-const carouselTitle = document.getElementById('carousel-title');
+  const carouselData = [
+      {
+          title: 'Survey Form',
+          image: 'assets/freecodcamp-certificate.png',
+          description: 'A form built to collect survey responses.',
+          technologies: ['HTML', 'CSS', 'JavaScript'],
+          sourceLink: 'https://github.com/example/survey-form',
+          liveLink: 'https://example.com/project4',
+      },
+      {
+          title: 'Personal Portfolio',
+          image: 'portfolio.jpeg',
+          description: 'A personal portfolio showcasing my projects.',
+          technologies: ['HTML', 'CSS', 'JavaScript'],
+          sourceLink: 'https://github.com/example/personal-portfolio',
+          liveLink: 'https://example.com/project5',
+      },
+      {
+          title: 'E-commerce Site',
+          image: 'ecommerce.jpeg',
+          description: 'An e-commerce site with various products.',
+          technologies: ['HTML', 'CSS', 'JavaScript'],
+          sourceLink: 'https://github.com/example/e-commerce-site',
+          liveLink: 'https://example.com/project6',
+      },
+      {
+          title: 'Blog Site',
+          image: 'blog.jpeg',
+          description: 'A blog site to share articles and posts.',
+          technologies: ['HTML', 'CSS', 'JavaScript'],
+          sourceLink: 'https://github.com/example/blog-site',
+          liveLink: 'https://example.com/project7',
+      },
+      {
+          title: 'Social Media App',
+          image: 'socialmedia.jpeg',
+          description: 'A social media app to connect with friends.',
+          technologies: ['HTML', 'CSS', 'JavaScript'],
+          sourceLink: 'https://github.com/example/social-media-app',
+          liveLink: 'https://example.com/project8',
+      },
+      {
+          title: 'To-do List App',
+          image: 'todolist.jpeg',
+          description: 'A to-do list app to manage tasks.',
+          technologies: ['HTML', 'CSS', 'JavaScript'],
+          sourceLink: 'https://github.com/example/to-do-list-app',
+          liveLink: 'https://example.com/project9',
+      },
+  ];
 
-let currentIndex = 0;
+  const carouselImage = document.getElementById('carousel-image');
+  const carouselTitle = document.getElementById('carousel-title');
 
-function showSlide(index) {
-    const totalSlides = carouselData.length;
-    if (index >= totalSlides) currentIndex = 0;
-    if (index < 0) currentIndex = totalSlides - 1;
-    const item = carouselData[currentIndex];
-    carouselImage.src = item.image;
-    carouselImage.alt = item.title;
-    carouselTitle.innerText = item.title;
-}
+  let currentIndex = 0;
 
-window.nextSlide = function nextSlide() {
-    currentIndex += 1;
-    showSlide(currentIndex);
-};
+  function showSlide(index) {
+      const totalSlides = carouselData.length;
+      if (index >= totalSlides) currentIndex = 0;
+      if (index < 0) currentIndex = totalSlides - 1;
+      const item = carouselData[currentIndex];
+      carouselImage.src = item.image;
+      carouselImage.alt = item.title;
+      carouselTitle.innerText = item.title;
+  }
 
-window.prevSlide = function prevSlide() {
-    currentIndex -= 1;
-    showSlide(currentIndex);
-};
+  window.nextSlide = function nextSlide() {
+      currentIndex += 1;
+      showSlide(currentIndex);
+  };
 
-// Initial display
-showSlide(currentIndex);
+  window.prevSlide = function prevSlide() {
+      currentIndex -= 1;
+      showSlide(currentIndex);
+  };
 
-// Popup Menu
-function createPopupMenu(title, description, imageSrc, listItems, sourceLink, liveLink) {
-    // Check if popup already exists
-    const existingPopup = document.querySelector('.popup-menu');
-    if (existingPopup) {
-        existingPopup.remove();
-    }
+  // Initial display
+  showSlide(currentIndex);
 
-    // Create the popup container
-    const popup = document.createElement('div');
-    popup.className = 'popup-menu';
+  // Popup Menu
+  function createPopupMenu(title, description, imageSrc, listItems, sourceLink, liveLink) {
+      // Check if popup already exists
+      const existingPopup = document.querySelector('.popup-menu');
+      if (existingPopup) {
+          existingPopup.remove();
+      }
 
-    // Create the content for the popup menu
-    popup.innerHTML = `
-        <div class="popup-content">
-            <div class="popup-header">
-                <h2>${title}</h2>
-                <span class="popup-close">&times;</span>
-            </div>
-            <div class="popup-body">
-                <img src="${imageSrc}" alt="${title}">
-                <p>${description}</p>
-                <ul>
-                    ${listItems.map(item => `<li>${item}</li>`).join('')}
-                </ul>
-                <button onclick="window.open('${sourceLink}', '_blank')">Source Link</button>
-                <button onclick="window.open('${liveLink}', '_blank')">Live Link</button>
-            </div>
-        </div>
-    `;
+      // Create the popup container
+      const popup = document.createElement('div');
+      popup.className = 'popup-menu';
 
-    // Add the popup to the container
-    document.getElementById('popup-container').appendChild(popup);
+      // Create the content for the popup menu
+      popup.innerHTML = `
+          <div class="popup-content">
+              <div class="popup-header">
+                  <h2>${title}</h2>
+                  <span class="popup-close">&times;</span>
+              </div>
+              <div class="popup-body">
+                  <img src="${imageSrc}" alt="${title}">
+                  <p>${description}</p>
+                  <ul>
+                      ${listItems.map(item => `<li>${item}</li>`).join('')}
+                  </ul>
+                  <button onclick="window.open('${sourceLink}', '_blank')">Source Link</button>
+                  <button onclick="window.open('${liveLink}', '_blank')">Live Link</button>
+              </div>
+          </div>
+      `;
 
-    // Show the popup
-    popup.style.display = 'flex';
+      // Add the popup to the container
+      document.getElementById('popup-container').appendChild(popup);
 
-    // Close the popup when clicking the close button
-    popup.querySelector('.popup-close').addEventListener('click', () => {
-        popup.style.display = 'none';
-        setTimeout(() => popup.remove(), 300); // Remove popup from DOM after closing
-    });
+      // Show the popup
+      popup.style.display = 'flex';
 
-    // Close the popup when clicking outside of it
-    window.addEventListener('click', (event) => {
-        if (event.target === popup) {
-            popup.style.display = 'none';
-            setTimeout(() => popup.remove(), 300); // Remove popup from DOM after closing
-        }
-    });
-}
+      // Close the popup when clicking the close button
+      popup.querySelector('.popup-close').addEventListener('click', () => {
+          popup.style.display = 'none';
+          setTimeout(() => popup.remove(), 300); // Remove popup from DOM after closing
+      });
 
-// Add event listeners for "Learn More" buttons
-carouselContainer.addEventListener('click', (event) => {
-    if (event.target.classList.contains('learn-more-button')) {
-        const currentItem = carouselData[currentIndex];
-        createPopupMenu(currentItem.title, currentItem.description, currentItem.image, currentItem.technologies, currentItem.sourceLink, currentItem.liveLink);
-    }
-});
+      // Close the popup when clicking outside of it
+      window.addEventListener('click', (event) => {
+          if (event.target === popup) {
+              popup.style.display = 'none';
+              setTimeout(() => popup.remove(), 300); // Remove popup from DOM after closing
+          }
+      });
+  }
 
+  // Add event listeners for "Learn More" buttons
+  carouselContainer.addEventListener('click', (event) => {
+      if (event.target.classList.contains('learn-more-button')) {
+          const currentItem = carouselData[currentIndex];
+          createPopupMenu(currentItem.title, currentItem.description, currentItem.image, currentItem.technologies, currentItem.sourceLink, currentItem.liveLink);
+      }
+  });
 
   // Images
   const images = [
