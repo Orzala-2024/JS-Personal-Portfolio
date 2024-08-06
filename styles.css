@@ -1,27 +1,27 @@
 @import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,500;1,400&display=swap');
 
 * {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
 }
 
 body {
   font-family: Arial, Helvetica, sans-serif;
-  background-color: #052B3C;
+  background-color: #052b3c;
   color: #fff;
 }
 
 li {
-    list-style: none;
+  list-style: none;
 }
 
 a {
-    text-decoration: none;
+  text-decoration: none;
 }
 
-.header{
-  background-color: #040E46;
+.header {
+  background-color: #040e46;
 }
 
 .navbar {
@@ -66,11 +66,11 @@ a {
   height: 90vh;
 }
 
-.nav-link{
+.nav-link {
   font-size: 1rem;
   font-weight: 400;
   color: #fff;
-  display: flex;     
+  display: flex;
 }
 
 .nav-menu::before {
@@ -80,7 +80,7 @@ a {
   left: 0;
   width: 0;
   height: 0;
-  border-top: 100px solid #46E9FF;
+  border-top: 100px solid #46e9ff;
   border-right: 100px solid transparent;
 }
 
@@ -91,9 +91,9 @@ a {
   right: 0;
   width: 0;
   height: 0;
-  border-bottom: 100px solid #46E9FF;
+  border-bottom: 100px solid #46e9ff;
   border-left: 100px solid transparent;
-} 
+}
 
 /* home */
 #home {
@@ -142,33 +142,33 @@ h5 {
 }
 
 #color {
-  color: #32DBF2;
+  color: #32dbf2;
 }
 
 .social-media {
   display: flex;
-  justify-content: center; 
+  justify-content: center;
   align-items: center;
-  margin-top: 0rem; 
+  margin-top: 0rem;
   margin-bottom: 0;
-  padding: 20px; 
-  animation: slide-in-left 1s forwards; 
+  padding: 20px;
+  animation: slide-in-left 1s forwards;
 }
 
 .social-media a {
-  display: flex; 
+  display: flex;
   justify-content: center;
   align-items: center;
   margin-right: 20px;
   margin-bottom: 20px;
   font-size: 16px;
   text-decoration: none;
-  width: 40px; 
+  width: 40px;
   height: 40px;
-  border: 2px solid #31DBF2; 
-  border-radius: 50%; 
+  border: 2px solid #31DBF2;
+  border-radius: 50%;
   background-color: transparent;
-  transition: all 0.3s ease; 
+  transition: all 0.3s ease;
 }
 
 .fa-brands ,.fa-solid{
@@ -208,12 +208,12 @@ box-shadow: 0 0 10px 5px rgba(70, 233, 255, 0.5);
   }
 
   .text {
-    order: 2; 
+    order: 2;
     margin-bottom: 0;
   }
 
   .pro {
-    order: 1; 
+    order: 1;
     text-align: left;
     margin-left: 20px;
   }
@@ -251,12 +251,12 @@ box-shadow: 0 0 10px 5px rgba(70, 233, 255, 0.5);
     border-radius: 0px 40px 40px 0px;
     width: 200px;
     height: 30px;
-    border-left: 2px solid #46E9FF; 
+    border-left: 2px solid #46E9FF;
     display: flex;
-    align-items: center; 
-    justify-content: center; 
+    align-items: center;
+    justify-content: center;
     color: #ffffff;
-    padding: 30px 20px; 
+    padding: 30px 20px;
     text-decoration: none;
     font-size: 16px;
     background-color: #040E46;
@@ -376,21 +376,21 @@ box-shadow: 0 0 10px 5px rgba(70, 233, 255, 0.5);
 }
 
 .certificate {
-  background-color: #000000; 
-  color: #46E9FF; 
+  background-color: #000000;
+  color: #46E9FF;
   border: none;
-  margin-bottom: 10px; 
+  margin-bottom: 10px;
   width: 500px;
-  max-width: 200px; 
+  max-width: 200px;
   text-align: center;
-  border-radius: 10px;  
+  border-radius: 10px;
 }
 
 .certificate-image {
   width: 100%;
   height: auto;
   margin-bottom: 10px;
-  box-shadow: 0px 10px 50px 0px #46E9FF; 
+  box-shadow: 0px 10px 50px 0px #46E9FF;
 }
 
 h2 {
@@ -491,7 +491,7 @@ h5 {
   display: flex;
   align-items: center;
   justify-content: center;
-  background-color: transparent;  
+  background-color: transparent;
 }
 
 .circle::before {
@@ -515,19 +515,19 @@ h5 {
 
 /* project */
 .project-intro {
-  margin-bottom: 0px; 
-  text-align: center; 
+  margin-bottom: 0px;
+  text-align: center;
 }
 
 .project-intro h6 {
-  font-size: 1.5em; 
-  margin-bottom: 0px; 
+  font-size: 1.5em;
+  margin-bottom: 0px;
   margin-top: 80px;
 }
 
 .project-intro p {
-  font-size: 1em; 
-  color: #fff; 
+  font-size: 1em;
+  color: #fff;
   margin-bottom: 5px;
 }
 
@@ -540,7 +540,7 @@ h5 {
 .carousel {
   overflow: hidden;
   width: 100%;
-  height: 200px; 
+  height: 200px;
   position: relative;
 }
 
@@ -645,13 +645,13 @@ h1 {
 
 #popup-description {
   font-size: 16px;
-  margin-bottom: 10px;  
+  margin-bottom: 10px;
 }
 
 #popup-tech-list {
   list-style: none;
   padding: 0;
-  margin-bottom: 10px;  
+  margin-bottom: 10px;
 }
 
 #popup-tech-list li {
@@ -724,12 +724,12 @@ h1 {
 .additional-image {
   width: 200px;
   height: 180px;
-  border-radius: 5px; 
+  border-radius: 5px;
 }
 
 /* contact page*/
 #information {
-  padding: 20px; 
+  padding: 20px;
 }
 
 #contact-div {
@@ -761,19 +761,19 @@ form input, form textarea, form button {
 
 form textarea {
   width: 100%;
-  height: 150px; 
+  height: 150px;
   padding: 10px;
   border: 2px solid #31DBF2;
   border-radius: 25px;
   font-size: 16px;
-  box-sizing: border-box; 
-  resize: vertical; 
+  box-sizing: border-box;
+  resize: vertical;
 }
 
 form input::placeholder,
 form textarea::placeholder {
-  color: #fff; 
-  font-size: 18px; 
+  color: #fff;
+  font-size: 18px;
 }
 
 input#email {
@@ -787,16 +787,16 @@ form button {
   background-color: #052B3C;
   width: 317px;
   height: 55px;
-  box-shadow: 8px 10px 18px 0px rgba(255, 255, 255, 0.3); 
-  border-radius: 25px; 
-  font-size: 16px; 
+  box-shadow: 8px 10px 18px 0px rgba(255, 255, 255, 0.3);
+  border-radius: 25px;
+  font-size: 16px;
   margin-top: 30px;
 }
 
 form button:hover {
-  background-color: #32DBF2; 
-  border-color: #052B3C; 
-  transform: scale(1.05); 
+  background-color: #32DBF2;
+  border-color: #052B3C;
+  transform: scale(1.05);
 }
 
 #contact-info {
@@ -817,7 +817,7 @@ form button:hover {
 .info-item i {
   margin-right: 10px;
   color: #32DBF2;
- margin-bottom: 1px;
+  margin-bottom: 1px;
 }
 
 .social-media-contact {
@@ -826,26 +826,26 @@ form button:hover {
 
 .social-media2 {
   display: flex;
-  margin-top: 0rem; 
+  margin-top: 0rem;
   margin-bottom: 0;
-  padding-top: 20px; 
-  animation: slide-in-left 1s forwards; 
+  padding-top: 20px;
+  animation: slide-in-left 1s forwards;
 }
 
 .social-media2 a {
-  display: flex; 
+  display: flex;
   justify-content: center;
   align-items: center;
   margin-right: 20px;
   margin-bottom: 20px;
   font-size: 16px;
   text-decoration: none;
-  width: 40px; 
+  width: 40px;
   height: 40px;
-  border: 2px solid #32DBF2; 
-  border-radius: 50%; 
+  border: 2px solid #32DBF2;
+  border-radius: 50%;
   background-color: transparent;
-  transition: all 0.3s ease; 
+  transition: all 0.3s ease;
 }
 
 #para {
@@ -896,10 +896,10 @@ form button:hover {
   }
 
   .social-media {
-    justify-content: left; 
+    justify-content: left;
   }
 
-/* about */ 
+/* about */
   #about {
     padding-top: 70px;
   }
@@ -936,22 +936,22 @@ form button:hover {
     gap: 50px;
   }
 
-  .certificate { 
-    max-width: 300px; 
+  .certificate {
+    max-width: 300px;
   }
 
 /* skills */
   .skills-container {
     display: flex;
     flex-direction: column;
-    gap: 10px; 
+    gap: 10px;
     margin-top: 0px;
   }
 
   .skill {
     display: flex;
     align-items: center;
-    gap: 10px; 
+    gap: 10px;
     width: 100%;
     margin-top: 30px;
   }
@@ -974,17 +974,17 @@ form button:hover {
   }
 
   .heading, #heading1 {
-    margin: 20px 0; 
-    padding: 10px; 
-    text-align: center; 
+    margin: 20px 0;
+    padding: 10px;
+    text-align: center;
   }
 
   .technical-skills,
   .professional-skills {
-    flex: 1; 
-    padding: 100px; 
-    box-sizing: border-box; 
-    margin: 0; 
+    flex: 1;
+    padding: 100px;
+    box-sizing: border-box;
+    margin: 0;
     width: 80%;
   }
 
@@ -999,7 +999,7 @@ form button:hover {
     display: flex;
     flex-direction: row;
     padding-left:  100px;
-    padding-right: 100px;  
+    padding-right: 100px;
   }
 
   .additional-image {
@@ -1031,7 +1031,7 @@ form button:hover {
 
   #para {
     width: 90%;
-    text-align: left;  
+    text-align: left;
   }
 
   #contact-2 {
@@ -1053,14 +1053,14 @@ form button:hover {
 
   #social-media-contact a {
     display: inline-block;
-    width: 40px;  
-    height: 40px;  
+    width: 40px;
+    height: 40px;
     line-height: 40px;
     text-align: center;
     border-radius: 50%;
-    border: 2px solid #31DBF2;  
-    margin: 5px;  
-    color: #000;  
+    border: 2px solid #31DBF2;
+    margin: 5px;
+    color: #000;
     background-color: transparent;
     transition: background-color 0.3s, color 0.3s;
   }
@@ -1125,7 +1125,7 @@ form button:hover {
 
   #para {
     width: 90%;
-    text-align: left; 
+    text-align: left;
   }
 
   #contact-2 {
@@ -1149,5 +1149,5 @@ form button:hover {
  @media (max-width: 430px){
   #side-image {
     margin-left: 50px;
-   } 
- }
+  }
+}
