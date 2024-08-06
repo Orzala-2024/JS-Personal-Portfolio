@@ -122,7 +122,6 @@ a {
 
 .pro {
   text-align: left;
-  margin-top: 0px;
 }
 
 h5 {
@@ -150,7 +149,6 @@ h5 {
   justify-content: center;
   align-items: center;
   margin-top: 0rem;
-  margin-bottom: 0;
   padding: 20px;
   animation: slide-in-left 1s forwards;
 }
@@ -165,18 +163,14 @@ h5 {
   text-decoration: none;
   width: 40px;
   height: 40px;
-  border: 2px solid #31DBF2;
+  border: 2px solid #31dbf2;
   border-radius: 50%;
   background-color: transparent;
   transition: all 0.3s ease;
 }
 
-.fa-brands ,.fa-solid{
-  color: #31DBF2;
-}
-
 .social-media a:hover {
-box-shadow: 0 0 10px 5px rgba(70, 233, 255, 0.5);
+  box-shadow: 0 0 10px 5px rgba(70, 233, 255, 0.5);
 }
 
 #CV {
@@ -1091,7 +1085,7 @@ form button:hover {
 
  .certificates {
     display: flex;
-    flex-direction:row;
+    flex-direction: row;
     justify-content: center;
     gap: 50px;
   }
@@ -1108,12 +1102,8 @@ form button:hover {
     display: flex;
   }
 
-  #contact-div {
-    align-items: left;
-  }
-
   h3 {
-    color: #46E9FF;
+    color: #46e9ff;
     font-size: 24px;
     margin-top: 10px;
   }
