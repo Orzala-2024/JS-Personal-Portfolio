@@ -997,7 +997,7 @@ form button:hover {
 
   .additional-image {
     width: 250px;
-    height: 250px;
+    height: 200px;
   }
 
   /* contact */
@@ -1064,6 +1064,11 @@ form button:hover {
     background-color: #000;
     color: #fff;
   }
+
+  .nav-link:hover {
+    color: #31dbf2;
+  }
+
 }
 
 @media (min-width: 768px) {
