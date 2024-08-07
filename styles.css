@@ -736,6 +736,8 @@ h1 {
 
 #contact-div {
   display: none;
+  flex-direction: column;
+  align-items: flex-start;
 }
 
 h3 {
@@ -1090,6 +1092,11 @@ form button:hover {
     gap: 50px;
   }
 
+  h2 {
+    margin-left: 80px;
+    font-size: 16px;
+  }
+
   .additional-images-container {
     display: flex;
     flex-direction: row;
@@ -1120,6 +1127,7 @@ form button:hover {
   }
 
   #para {
+    display: flex;
     width: 90%;
     text-align: left;
   }
@@ -1149,5 +1157,14 @@ form button:hover {
 
   #info {
     display: none;
+  }
+
+  h2 {
+    text-align: center;
+    font-size: 18px;
+  }
+
+  #contact-div {
+    display: block;
   }
 }
