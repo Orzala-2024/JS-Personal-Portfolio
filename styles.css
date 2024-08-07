@@ -1160,6 +1160,10 @@ form button:hover {
     margin-left: 50px;
   }
 
+  #contact-div {
+    display: block;
+  }
+
   #info {
     display: none;
   }
@@ -1167,9 +1171,5 @@ form button:hover {
   h2 {
     text-align: center;
     font-size: 18px;
-  }
-
-  #contact-div {
-    display: block;
   }
 }
