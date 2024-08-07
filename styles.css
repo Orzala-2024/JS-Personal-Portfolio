@@ -735,9 +735,7 @@ h1 {
 }
 
 #contact-div {
-  display: flex;
-  flex-direction: column;
-  align-items: flex-start;
+  display: none;
 }
 
 h3 {
@@ -1038,7 +1036,7 @@ form button:hover {
   }
 
   #contact-info {
-    display: block;
+    display: none;
     margin-top: 100px;
   }
 
@@ -1147,5 +1145,9 @@ form button:hover {
 @media (max-width: 430px) {
   #side-image {
     margin-left: 50px;
+  }
+
+  #info {
+    display: none;
   }
 }
