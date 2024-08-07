@@ -1164,12 +1164,12 @@ form button:hover {
     display: none;
   }
 
-  #contact-div {
-    display: block;
-  }
-
   h2 {
     text-align: center;
     font-size: 18px;
-  }  
+  } 
+  
+   #contact-div {
+    display: block;
+  }
 }
