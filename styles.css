@@ -726,7 +726,8 @@ h1 {
 .additional-image {
   width: 200px;
   height: 180px;
-  border-radius: 5px;
+  border-radius: 10px;
+  margin-bottom: 10px;
 }
 
 /* contact page */
