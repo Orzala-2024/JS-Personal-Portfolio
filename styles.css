@@ -7,7 +7,7 @@
 }
 
 body {
-  font-family: Arial, Helvetica, sans-serif;
+  font-family: cursive;
   background-color: #052b3c;
   color: #fff;
 }
@@ -997,7 +997,7 @@ form button:hover {
 
   .additional-image {
     width: 250px;
-    height: 200px;
+    height: 250px;
   }
 
   /* contact */
@@ -1064,11 +1064,6 @@ form button:hover {
     background-color: #000;
     color: #fff;
   }
-
-  .nav-link:hover {
-    color: #31dbf2;
-  }
-
 }
 
 @media (min-width: 768px) {
@@ -1160,10 +1155,6 @@ form button:hover {
     margin-left: 50px;
   }
 
-  #contact-div {
-    display: block;
-  }
-
   #info {
     display: none;
   }
@@ -1171,5 +1162,9 @@ form button:hover {
   h2 {
     text-align: center;
     font-size: 18px;
+  }
+
+  #contact-div {
+    display: block;
   }
 }
