@@ -84,6 +84,11 @@ For questions or suport , please contact me through below addresess:
 - LinkedIn: [Lima M_S](https://linkedin.com/in/Lima_M_S)
 - Email: [Lima Sahibzada](limasahibzada2023@gmail.com.com)
 
+## UI/UX Designers :
+- Rohina Nazari 
+- Nilimah Ahmadi 
+- Nadia Noori 
+
 
 
 
