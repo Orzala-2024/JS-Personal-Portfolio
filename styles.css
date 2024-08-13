@@ -344,9 +344,10 @@ h5 {
 #pra {
   font-size: 16px;
   margin-top: 5px;
-  text-align: center;
+  text-align: left;
   margin-bottom: 0;
   justify-content: center;
+  width: 50%;
 }
 
 .about-page {
@@ -355,6 +356,7 @@ h5 {
 
 .about-text {
   order: 2;
+  width: 80%;
 }
 
 @media (max-width: 768px) {
@@ -862,6 +864,10 @@ form button:hover {
   /* home */
   #home {
     margin-top: 30px;
+  }
+
+  #name {
+    font-size: 50px;
   }
 
   #side-image {
