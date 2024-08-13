@@ -599,6 +599,15 @@ h2 {
   cursor: pointer;
   font-size: 20px;
   transform: translateY(-50%);
+  z-index: 1000;
+}
+
+.prev-button {
+  left: -40px; 
+}
+
+.next-button {
+  right: -40px; 
 }
 
 h1 {
